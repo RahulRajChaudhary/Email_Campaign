@@ -8,7 +8,7 @@ const UploadSchema = new Schema<Upload>(
     originalName: { type: String, required: true },
     columns: { type: [String], required: true },
     rowCount: { type: Number, required: true },
-    data: { type: [Schema.Types.Mixed], required: true },
+    data: { type: [{ type: Schema.Types.Mixed }], required: true },
     uploadedAt: { type: String, required: true },
     lastUsedAt: { type: String, default: null },
   },
